@@ -8,9 +8,9 @@
 #import <Foundation/Foundation.h>
 
 #ifndef Obfuscate
-    #define Obfuscate NSMutableString.string
+#define HIDE_CHAR NSMutableString.new
 #else
-    #error Obfuscate macro already defined, please rename your macro.
+#error Obfuscate macro already defined, please rename your macro.
 #endif
 
 @interface NSMutableString (UAObfuscatedString)
